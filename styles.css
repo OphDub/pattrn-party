@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700');
+
+html {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.pattrn-party-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: #FFFFFF;
+  background: #291F2F;
+}
+
+.pattrn-party-hdr {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.pattrn-hdr-split {
+  color: #2DCBCB;
+}
+
+main {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.styling-element {
+  padding: 15px 0;
+}
+
+.styling-hdr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.styling-hdr-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  width: 150px;
+}
+
+.styling-hdr-svg {
+  height: 2px;
+  flex-grow: 1;
+  background: #a7a7a7;
+}
+
+.styling-code {
+  display: flex;
+  flex-direction: column;
+}
+
+.styling-code-btn {
+  align-self: center;
+  background: #291F2F;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 60px;
+  max-width: 200px;
+}
+
+.styling-code-btn:hover {
+  background: #2DCBCB;
+  cursor: pointer;
+}
+
+/* Styling for Accordion Tabs */
+.accordion-tabs {
+  display: flex;
+  max-width: 500px;
+  background: #efefef;
+}
+
+.tab-radio-btn {
+  position: absolute;
+  opacity: 0;
+}
+
+.label {
+	width: 100%;
+	padding: 20px 30px;
+	background: #FFFFFF;
+	cursor: pointer;
+	color: #7F7F7F;
+}
+
+.label:hover {
+	background: #d8d8d8;
+}
+
+.panel {
+  display: flex;
+  flex-direction: row;
+}
+
+.panel-img {
+  width: 225px;
+  height: 275px;
+}
+
+.panel-hdr-svg {
+  height: 2px;
+  flex-grow: 1;
+  background: #a7a7a7;
+}
