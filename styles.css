@@ -73,6 +73,7 @@ main {
   font-size: 14px;
   font-weight: 400;
   padding: 12px 60px;
+  margin: 16px;
   max-width: 200px;
 }
 
@@ -82,41 +83,127 @@ main {
 }
 
 /* Styling for Accordion Tabs */
-.accordion-tabs {
-  display: flex;
-  max-width: 500px;
-  background: #efefef;
-}
-
-.tab-radio-btn {
-  position: absolute;
-  opacity: 0;
-}
-
-.label {
-	width: 100%;
-	padding: 20px 30px;
-	background: #FFFFFF;
-	cursor: pointer;
-	color: #7F7F7F;
-}
-
-.label:hover {
-	background: #d8d8d8;
-}
-
 .panel {
   display: flex;
   flex-direction: row;
+  padding: 15px;
+  border: solid #a7a7a7;
+  border-width: 0px 1px 1px 1px;
 }
 
 .panel-img {
-  width: 225px;
+  min-width: 230px;
   height: 275px;
+  margin-right: 10px;
+}
+
+.panel-txt {
+  flex-grow: 1;
+}
+
+.panel-header {
+  display: flex;
+  flex-direction: column;
 }
 
 .panel-hdr-svg {
   height: 2px;
   flex-grow: 1;
   background: #a7a7a7;
+}
+
+.tab-hdr {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.label {
+  width: 100%;
+  padding: 20px;
+  background: #e5e5e5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-label {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 20px 45px;
+  border: 1px solid #a7a7a7;
+  cursor: pointer;
+  background: #d1d1d1;
+  transition: background ease 0.2s;
+}
+
+.accordion-tabs .panel {
+  order: 99;
+  flex-grow: 1;
+  display: none;
+  background: #ffffff;
+}
+
+.accordion-tabs input[type="radio"] {
+  display: none;
+}
+
+.accordion-tabs input[type="radio"]:checked + label {
+  background: #FFFFFF;
+  border-bottom: none;
+}
+
+.accordion-tabs input[type="radio"]:checked + label + .panel {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .panel-img {
+    width: 200px;
+    height: 245px;
+    margin-right: 10px;
+  }
+
+  .accordion-tabs .panel,
+  .accordion-tabs label {
+    order: initial;
+  }
+
+  .accordion-tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+@media (max-width: 635px) {
+  .panel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .panel-img {
+    width: 100%;
+    height: 25%;
+    margin: 0;
+  }
+
+  .panel-txt {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    padding: 0 10px;
+  }
 }
