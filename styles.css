@@ -82,6 +82,14 @@ main {
   cursor: pointer;
 }
 
+.styling-anchor {
+  text-decoration: none;
+}
+
+.styling-anchor:visited {
+  color: #FFFFFF;
+}
+
 /* Styling for Accordion Tabs */
 .panel {
   display: flex;
