@@ -197,7 +197,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 0;
-    width: 100%;
+    width: 98%;
   }
 
   .panel-img {
@@ -215,6 +215,86 @@ main {
     min-width: 100%;
   }
 }
+
+/* Styling for Flexible Cards */
+.flexible-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-card {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #a7a7a7;
+  margin: 5px;
+}
+
+.flex-card-header {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  padding: 0 10px;
+}
+
+.flex-card-hdr-txt {
+}
+
+.flex-card-img {
+  display: flex;
+  width: 100%;
+  height: 275px;
+}
+
+#flex-card-1 {
+  max-width: 725px;
+}
+
+#flex-card-2 {
+  max-width: 350px;
+}
+
+#flex-card-3,
+#flex-card-4,
+#flex-card-5 {
+  width: 350px;
+}
+
+#flex-card-6 {
+  width: 350px;
+}
+
+#flex-card-7 {
+  width: 725px;
+}
+
+@media (max-width: 1170px) {
+  #flex-card-4 {
+    width: 725px;
+  }
+}
+
+@media (max-width: 785px) {
+  #flex-card-2,
+  #flex-card-3,
+  #flex-card-5,
+  #flex-card-6 {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 643px) {
+  #flex-card-2,
+  #flex-card-3,
+  #flex-card-4,
+  #flex-card-5,
+  #flex-card-6 {
+    min-width: 100%;
+  }
+}
+
+/* General Styling for Page */
 
 @media (max-width: 400px) {
   main {
