@@ -280,16 +280,18 @@ main {
   #flex-card-3,
   #flex-card-5,
   #flex-card-6 {
-    max-width: 280px;
+    max-width: 330px;
   }
 }
 
-@media (max-width: 643px) {
+@media (max-width: 745px) {
+  #flex-card-1,
   #flex-card-2,
   #flex-card-3,
   #flex-card-4,
   #flex-card-5,
-  #flex-card-6 {
+  #flex-card-6,
+  #flex-card-7 {
     min-width: 100%;
   }
 }
