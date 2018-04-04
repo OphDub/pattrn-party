@@ -238,35 +238,23 @@ main {
   padding: 0 10px;
 }
 
-.flex-card-hdr-txt {
-}
-
 .flex-card-img {
   display: flex;
   width: 100%;
   height: 275px;
 }
 
-#flex-card-1 {
+#flex-card-1,
+#flex-card-7 {
   max-width: 725px;
 }
 
-#flex-card-2 {
-  max-width: 350px;
-}
-
+#flex-card-2,
 #flex-card-3,
 #flex-card-4,
-#flex-card-5 {
-  width: 350px;
-}
-
+#flex-card-5,
 #flex-card-6 {
   width: 350px;
-}
-
-#flex-card-7 {
-  width: 725px;
 }
 
 @media (max-width: 1170px) {
