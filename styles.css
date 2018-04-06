@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700');
+
+html {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.pattrn-party-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: #FFFFFF;
+  background: #291F2F;
+}
+
+.pattrn-party-hdr {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.pattrn-hdr-split {
+  color: #2DCBCB;
+}
+
+main {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.styling-element {
+  padding: 15px 0;
+}
+
+.styling-hdr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.styling-hdr-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  width: 150px;
+}
+
+.styling-hdr-svg {
+  height: 2px;
+  flex-grow: 1;
+  background: #a7a7a7;
+}
+
+.styling-code {
+  display: flex;
+  flex-direction: column;
+}
+
+.styling-code-btn {
+  align-self: center;
+  background: #291F2F;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 60px;
+  margin: 16px;
+  max-width: 200px;
+}
+
+.styling-code-btn:hover {
+  background: #2DCBCB;
+  cursor: pointer;
+}
+
+.styling-anchor {
+  text-decoration: none;
+}
+
+.styling-anchor:visited {
+  color: #FFFFFF;
+}
+
+/* Styling for Accordion Tabs */
+.panel {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border: solid #a7a7a7;
+  border-width: 0px 1px 1px 1px;
+}
+
+.panel-img {
+  min-width: 230px;
+  height: 275px;
+  margin-right: 10px;
+}
+
+.panel-txt {
+  flex-grow: 1;
+}
+
+.panel-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-hdr-svg {
+  height: 2px;
+  flex-grow: 1;
+  background: #a7a7a7;
+}
+
+.tab-hdr {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.label {
+  width: 100%;
+  padding: 20px;
+  background: #e5e5e5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-label {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 20px 45px;
+  border: 1px solid #a7a7a7;
+  cursor: pointer;
+  background: #d1d1d1;
+  transition: background ease 0.2s;
+}
+
+.accordion-tabs .panel {
+  order: 99;
+  flex-grow: 1;
+  display: none;
+  background: #ffffff;
+}
+
+.accordion-tabs input[type="radio"] {
+  display: none;
+}
+
+.accordion-tabs input[type="radio"]:checked + label {
+  background: #FFFFFF;
+  border-bottom: none;
+}
+
+.accordion-tabs input[type="radio"]:checked + label + .panel {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .panel-img {
+    width: 200px;
+    height: 245px;
+    margin-right: 10px;
+  }
+
+  .accordion-tabs .panel,
+  .accordion-tabs label {
+    order: initial;
+  }
+
+  .accordion-tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+@media (max-width: 635px) {
+  .panel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 98%;
+  }
+
+  .panel-img {
+    margin: 0;
+    width: 90%;
+  }
+
+  .panel-txt {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 345px) {
+  .panel-img {
+    min-width: 100%;
+  }
+}
+
+/* Styling for Flexible Cards */
+.flexible-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-card {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #a7a7a7;
+  margin: 5px;
+}
+
+.flex-card-header {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  padding: 0 10px;
+}
+
+.flex-card-img {
+  display: flex;
+  width: 100%;
+  height: 275px;
+}
+
+#flex-card-1,
+#flex-card-7 {
+  max-width: 725px;
+}
+
+#flex-card-2,
+#flex-card-3,
+#flex-card-4,
+#flex-card-5,
+#flex-card-6 {
+  width: 350px;
+}
+
+@media (max-width: 1170px) {
+  #flex-card-4 {
+    width: 725px;
+  }
+}
+
+@media (max-width: 785px) {
+  #flex-card-2,
+  #flex-card-3,
+  #flex-card-5,
+  #flex-card-6 {
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 745px) {
+  #flex-card-1,
+  #flex-card-2,
+  #flex-card-3,
+  #flex-card-4,
+  #flex-card-5,
+  #flex-card-6,
+  #flex-card-7 {
+    min-width: 100%;
+  }
+}
+
+/* General Styling for Page */
+
+@media (max-width: 400px) {
+  main {
+    padding: 0 10px;
+  }
+
+  .pattrn-party-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .styling-hdr {
+    flex-direction: column;
+  }
+}

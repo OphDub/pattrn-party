@@ -4,40 +4,176 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
   <title>Pattrn Party</title>
 </head>
 <body>
-  <nav>
-    <h3>Pattrn Party</h3>
-    <h4>User Name</h4>
-  </nav>
+  <header>
+    <nav class="pattrn-party-nav">
+      <h3 class="pattrn-party-hdr">
+        Pattrn <span class="pattrn-hdr-split">Party</span>
+      </h3>
+      <h4 class="pattrn-party-user">Big O</h4>
+    </nav>
+  </header>
   <main>
-    <article>
-      <h3>Accordion Tabs</h3>
-      <section>
-
+    <article class="styling-element">
+      <div class="styling-hdr">
+        <h3 class="styling-hdr-title">Accordion Tabs</h3>
+        <svg class="styling-hdr-svg">
+          <line class="styling-hdr-line"/>
+        </svg>
+      </div>
+      <section class="styling-demo">
+        <section class="accordion-tabs">
+          <input type="radio" name="tabs" id="tab-1" class="input" checked="checked">
+          <label for="tab-1" class="tab-label">
+            <h5 class="tab-hdr">Tab 1</h5>
+          </label>
+          <article class="panel">
+            <img class="panel-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+            <div class="panel-txt">
+              <div class="panel-header">
+                <h3 class="panel-hdr-txt">Lorem ipsum dolor</h3>
+                <svg class="panel-hdr-svg"></svg>
+              </div>
+              <div class="panel-bdy">
+                <p class="panel-bdy-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem impedit hic blanditiis harum. Ipsa illum dicta ipsam! Quod nulla odit officiis commodi similique, debitis, a, ipsum autem maxime mollitia esse.</p>
+                <p class="panel-bdy-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, modi quas laboriosam dolorem commodi incidunt.</p>
+              </div>
+            </div>
+          </article>
+          <input type="radio" name="tabs" id="tab-2" class="input">
+          <label for="tab-2" class="tab-label">
+            <h5 class="tab-hdr">Tab 2</h5>
+          </label>
+          <article class="panel">
+            <img class="panel-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+            <div class="panel-txt">
+              <div class="panel-header">
+                <h3 class="panel-hdr-txt">Lorem ipsum dolor consectetur</h3>
+                <svg class="panel-hdr-svg"></svg>
+              </div>
+              <div class="panel-bdy">
+                <p class="panel-bdy-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, alias. Aperiam adipisci, sequi quasi dolor ipsam nam tempora dolores placeat doloribus quisquam rerum accusantium tenetur libero ratione, magnam ipsa itaque!</p>
+                <p class="panel-bdy-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, alias. Aperiam adipisci, sequi quasi dolor ipsam </p>
+              </div>
+            </div>
+          </article>
+          <input type="radio" name="tabs" id="tab-3" class="input">
+          <label for="tab-3" class="tab-label">
+            <h5 class="tab-hdr">Tab 3</h5>
+          </label>
+          <article class="panel">
+            <img class="panel-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+            <div class="panel-txt">
+              <div class="panel-header">
+                <h3 class="panel-hdr-txt">Lorem ipsum dolor sit amet consectetur</h3>
+                <svg class="panel-hdr-svg"></svg>
+              </div>
+              <div class="panel-bdy">
+                <p class="panel-bdy-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, alias. Aperiam adipisci, sequi quasi dolor ipsam nam tempora dolores placeat doloribus quisquam rerum accusantium tenetur libero ratione, magnam ipsa itaque!</p>
+                <p class="panel-bdy-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, alias. Aperiam adipisci, sequi quasi dolor ipsam </p>
+              </div>
+            </div>
+          </article>
+          <input type="radio" name="tabs" id="tab-4" class="input">
+          <label for="tab-4" class="tab-label">
+            <h5 class="tab-hdr">Tab 4</h5>
+          </label>
+          <article class="panel">
+            <img class="panel-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+            <div class="panel-txt">
+              <div class="panel-header">
+                <h3 class="panel-hdr-txt">Lorem ipsum dolor sit</h3>
+                <svg class="panel-hdr-svg"></svg>
+              </div>
+              <div class="panel-bdy">
+                <p class="panel-bdy-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, alias. Aperiam adipisci, sequi quasi dolor ipsam nam tempora dolores placeat doloribus quisquam rerum accusantium tenetur libero ratione, magnam ipsa itaque!</p>
+                <p class="panel-bdy-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, alias. Aperiam adipisci, sequi quasi dolor ipsam </p>
+              </div>
+            </div>
+          </article>
+        </section>
       </section>
-      <section>
-
+      <section class="styling-code">
+        <button class="styling-code-btn">
+          <a href="https://codepen.io/OphDub/pen/MVrEJe" class="styling-anchor">View Code</a>
+        </button>
       </section>
     </article>
-    <article>
-      <h3>Flexible Cards</h3>
-      <section>
-
+    <article class="styling-element">
+      <div class="styling-hdr">
+        <h3 class="styling-hdr-title">Flexible Cards</h3>
+        <svg class="styling-hdr-svg">
+          <line class="styling-hdr-line"/>
+        </svg>
+      </div>
+      <section class="styling-demo">
+        <article class="flexible-cards">
+          <article class="flex-card" id="flex-card-1">
+            <div class="flex-card-header">
+              <h3 class="flex-card-hdr-txt">Lorem ipsum dolor sit amet consectetur</h3>
+            </div>
+            <img class="flex-card-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+          </article>
+          <article class="flex-card" id="flex-card-2">
+            <div class="flex-card-header">
+              <h3 class="flex-card-hdr-txt">Lorem ipsum</h3>
+            </div>
+            <img class="flex-card-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+          </article>
+          <article class="flex-card" id="flex-card-3">
+            <div class="flex-card-header">
+              <h3 class="flex-card-hdr-txt">Lorem ipsum dolor sit</h3>
+            </div>
+            <img class="flex-card-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+          </article>
+          <article class="flex-card" id="flex-card-4">
+            <div class="flex-card-header">
+              <h3 class="flex-card-hdr-txt">Lorem ipsum dolor consectetur</h3>
+            </div>
+            <img class="flex-card-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+          </article>
+          <article class="flex-card" id="flex-card-5">
+            <div class="flex-card-header">
+              <h3 class="flex-card-hdr-txt">Lorem ipsum</h3>
+            </div>
+            <img class="flex-card-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+          </article>
+          <article class="flex-card" id="flex-card-6">
+            <div class="flex-card-header">
+              <h3 class="flex-card-hdr-txt">Lorem ipsum</h3>
+            </div>
+            <img class="flex-card-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+          </article>
+          <article class="flex-card" id="flex-card-7">
+            <div class="flex-card-header">
+              <h3 class="flex-card-hdr-txt">Lorem ipsum dolor sit amet consectetur</h3>
+            </div>
+            <img class="flex-card-img" src="http://mpcoleman.co.uk/wp-content/uploads/2013/07/placeholder.jpg" alt="panel image">
+          </article>
+        </article>
       </section>
-      <section>
-
+      <section class="styling-code">
+        <button class="styling-code-btn">
+          <a href="https://codepen.io/OphDub/pen/xWaqKd" class="styling-anchor">View Code</a>
+        </button>
       </section>
     </article>
-    <article>
-      <h3>Header Bar</h3>
-      <section>
+    <article class="styling-element">
+      <div class="styling-hdr">
+        <h3 class="styling-hdr-title">Header Bar</h3>
+        <svg class="styling-hdr-svg">
+          <line class="styling-hdr-line"/>
+        </svg>
+      </div>
+      <section class="styling-demo">
 
       </section>
-      <section>
-
+      <section class="styling-code">
+        <button class="styling-code-btn">View Code</button>
       </section>
     </article>
   </main>
