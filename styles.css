@@ -34,6 +34,11 @@ main {
   justify-content: center;
 }
 
+.styling-demo {
+  display: flex;
+  justify-content: center;
+}
+
 .styling-element {
   padding: 15px 0;
 }
@@ -222,6 +227,8 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  justify-self: center;
+  max-width: 1250px;
 }
 
 .flex-card {
@@ -254,12 +261,12 @@ main {
 #flex-card-4,
 #flex-card-5,
 #flex-card-6 {
-  width: 350px;
+  max-width: 350px;
 }
 
 @media (max-width: 1170px) {
   #flex-card-4 {
-    width: 725px;
+    max-width: 725px;
   }
 }
 
@@ -282,6 +289,26 @@ main {
   #flex-card-7 {
     min-width: 100%;
   }
+}
+
+/* Styling for Responsive Header */
+
+.responsive-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #D1D2D3;
+  padding: 20px;
+}
+
+.header-user-profile-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.header-nav-link {
 }
 
 /* General Styling for Page */
