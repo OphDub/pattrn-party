@@ -51,6 +51,7 @@ main {
 }
 
 .styling-hdr-title {
+  white-space: nowrap;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
@@ -242,7 +243,13 @@ main {
   display: flex;
   justify-content: flex-start;
   overflow-x: scroll;
-  padding: 0 10px;
+  padding: 0 15px;
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 290px;
+  max-height: 150px;
+  text-overflow: ellipsis;
 }
 
 .flex-card-img {
@@ -295,6 +302,7 @@ main {
 
 .responsive-header {
   display: flex;
+  flex-grow: 1;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -308,7 +316,55 @@ main {
   border-radius: 50%;
 }
 
-.header-nav-link {
+.hdr-nav-links {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-search-input {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.header-search {
+  background: #F2F2F2;
+  border: 1px solid #666666;
+  padding: 5px;
+}
+
+.hdr-nav-links label,
+#reveal-nav-links {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked~.remove-check {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hdr-nav-links {
+    justify-content: flex-end;
+  }
+
+  .hdr-nav-links label {
+    display: block;
+  }
+
+  .hdr-nav-link,
+  .header-search {
+    display: none;
+  }
+
+  input[type=checkbox]:checked ~ #hdr-nav-links {
+    display: block;
+  }
 }
 
 /* General Styling for Page */
@@ -324,6 +380,7 @@ main {
   }
 
   .styling-hdr {
+    display: flex;
     flex-direction: column;
   }
 }
