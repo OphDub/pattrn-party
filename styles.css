@@ -316,7 +316,7 @@ main {
   border-radius: 50%;
 }
 
-.hdr-nav-links {
+#hdr-nav-links {
   display: flex;
   flex-grow: 1;
   flex-direction: row;
@@ -324,9 +324,25 @@ main {
   align-items: center;
 }
 
+.hdr-nav-link {
+  text-decoration: none;
+  color: #666666;
+}
+
+.hdr-nav-link:visited {
+  color: #666666;
+}
+
+.hdr-nav-link:hover {
+  color: #34D1D1;
+}
+
 .header-search-input {
   -webkit-appearance: none;
   outline: none;
+  border: none;
+  box-shadow: none;
+  background: #F2F2F2;
 }
 
 .header-search {
@@ -335,9 +351,14 @@ main {
   padding: 5px;
 }
 
-.hdr-nav-links label,
-#reveal-nav-links {
+.hdr-nav-menu {
+  background: none;
+  cursor: pointer;
   display: none;
+  text-align: center;
+  margin: 0;
+  padding: 10px 20px 11px;
+  text-decoration: none;
 }
 
 input[type=checkbox] {
@@ -349,21 +370,61 @@ input[type=checkbox]:checked~.remove-check {
 }
 
 @media (max-width: 800px) {
-  .hdr-nav-links {
-    justify-content: flex-end;
+  .header-user-profile-img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
   }
 
-  .hdr-nav-links label {
-    display: block;
+  .responsive-header {
+    flex-direction: column;
+    padding: 0px;
   }
 
-  .hdr-nav-link,
-  .header-search {
+  .user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .hdr-nav-menu {
+    display: flex;
+  }
+
+  #hidden-menu {
     display: none;
   }
 
-  input[type=checkbox]:checked ~ #hdr-nav-links {
-    display: block;
+  #hdr-nav-links {
+    display: none;
+    padding-top: 15px;
+    background: rgb(225, 225, 225);
+    width: 100%;
+  }
+
+  .hdr-nav-link {
+    display: flex;
+    margin: 15px;
+    align-self: flex-start;
+  }
+
+  .header-search {
+    display: flex;
+    margin: 5px;
+    width: 90%;
+  }
+
+  .header-search-input {
+    width: 90%;
+    flex: 1;
+  }
+
+  input[type=checkbox]:checked~#hdr-nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
 
@@ -382,5 +443,6 @@ input[type=checkbox]:checked~.remove-check {
   .styling-hdr {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 }
